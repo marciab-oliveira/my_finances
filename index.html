@@ -6,6 +6,80 @@
   <title>My finances</title>
 </head>
 <body>
-  
+  <div class="container">
+    <div class="header">
+      <div class="header_logo">
+        <img class="logo" src="" alt="logo"> 
+      </div>
+      <div class="header_text">
+        <h1 class="text">Controle financeiro</h1>
+      </div>
+      <div class="header_ckeckbox">
+        <img class="logo" src="" alt="ckeckbox"> 
+      </div>
+      <div class="header_menu"> 
+        <div class="header_close">
+          <label for="checkbox" class="close">X</label>
+        </div>
+        <div class="menu">
+          <ul>
+            <li>Cadastro de transações</li>
+            <li>Limpar dados</li>
+            <li>Configurações</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <form class="main_register">
+        <div class="register_service">
+          <p>Cadastro</p>
+          <div class="service_type">
+            <label for="">Tipo de transação</label>
+            <select name="service">
+              <option value=" entry">Entrada</option>
+              <option value="exit">Saída</option>
+            </select>
+          </div>
+          <div class="description_type">
+            <label for="">Descrição</label>
+            <input type="text" placeholder="Descrição">
+          </div>
+          <div class="price_type">
+            <label for="">Valor</label>
+            <input type="text" placeholder="R$">
+          </div>
+        </div>
+        <div>
+          <button type="submit">Adicionar</button>
+        </div>
+      </form>
+
+      <div class="main_extract">
+        <p>Extrato de transações</p>
+        <div class="extract">
+          <form class="extract_form">
+            <table class="extract_table">
+              <thead>
+                <tr>
+                  <th>Descrição</th>
+                  <th>Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+              <tfoot>
+              </tfoot>
+            </table>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div>© 2023 My Finances. Todos direitos reservados.</div>
+      <div>Feito com 💚 por Marcia B Oliveira.</div>
+    </footer>
+  </div>
 </body>
 </html>
