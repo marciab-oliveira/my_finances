@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My finances</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
@@ -37,22 +38,22 @@
           <p>Cadastro</p>
           <div class="service_type">
             <label for="">Tipo de transação</label>
-            <select name="service">
-              <option value=" entry">Entrada</option>
+            <select name="service" id="service">
+              <option value="entry">Entrada</option>
               <option value="exit">Saída</option>
             </select>
           </div>
           <div class="description_type">
             <label for="">Descrição</label>
-            <input type="text" placeholder="Descrição">
+            <input id="description_type" type="text" placeholder="Descrição">
           </div>
           <div class="price_type">
             <label for="">Valor</label>
-            <input type="text" placeholder="R$">
+            <input id="price_type" type="text" placeholder="R$">
           </div>
         </div>
         <div>
-          <button type="submit">Adicionar</button>
+          <button id="addTransaction"type="submit">Adicionar</button>
         </div>
       </form>
 
@@ -60,9 +61,10 @@
         <p>Extrato de transações</p>
         <div class="extract">
           <form class="extract_form">
-            <table class="extract_table">
+            <table class="extract_table" id="extract_table">
               <thead>
                 <tr>
+                  <th>Data</th>
                   <th>Descrição</th>
                   <th>Valor</th>
                 </tr>
@@ -82,4 +84,5 @@
     </footer>
   </div>
 </body>
+<script src="script.js"></script>
 </html>
